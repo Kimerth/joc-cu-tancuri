@@ -6,4 +6,5 @@ public struct Rigidbody : IComponentData
 {
     public float2 velocity;
     public float2 acceleration;
+    public float drag;
 }
