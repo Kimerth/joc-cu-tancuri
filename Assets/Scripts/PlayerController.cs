@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float speed;
 
-    private Vector3 velocity;
+    private Vector2 velocity;
 
     // Start is called before the first frame update
     void Start()
@@ -28,10 +28,10 @@ public class PlayerController : MonoBehaviour
             switch (context.control.name)
             {
                 case "w":
-                    velocity.z = speed;
+                    velocity.y = speed;
                     break;
                 case "s":
-                    velocity.z = -speed;
+                    velocity.y = -speed;
                     break;
                 case "a":
                     velocity.x = -speed;
